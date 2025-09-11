@@ -1,0 +1,133 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://kit.fontawesome.com/9ad4475b45.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/x-icon" href="images/CCR_Logo.png">
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+      <link rel="stylesheet" href="index.css">
+      <title>Contact Us - Czaeyra's Cafe & Resto</title>
+  </head>
+  <body class="bg-yellow-50 text-gray-900">
+      <!-- Navbar -->
+    <header class="bg-black text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+        <div class="flex items-center space-x-2">
+          <a href="index.html"><img src="images/Logo.jpg.png" alt="Logo" class="w-24 h-24 md:w-28 md:h-28 "></a>
+          <h1 class="font-bold text-xl md:text-2xl">Czaeyra's Café and Resto</h1>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-lg hover:text-orange-500 transition">Home</a>
+          <a href="about.html" class="text-lg hover:text-orange-500 transition">About</a>
+          <a href="menu.html" class="text-lg hover:text-orange-500 transition">Menu</a>
+          <a href="contact.html" class="text-lg hover:text-orange-500 transition">Contact</a>
+        </nav>
+        
+        <!-- Mobile menu button -->
+        <button id="mobileMenuBtn" class="text-white text-2xl md:hidden focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Mobile Navigation -->
+      <nav id="mobileMenu" class="md:hidden bg-black bg-opacity-95 absolute top-full left-0 w-full flex-col text-center space-y-4 py-6 px-4 hidden z-50">
+        <a href="index.html" class="block text-lg hover:text-orange-500 transition">Home</a>
+        <a href="about.html" class="block text-lg hover:text-orange-500 transition">About</a>
+        <a href="menu.html" class="block text-lg hover:text-orange-500 transition">Menu</a>
+        <a href="contact.html" class="block text-lg hover:text-orange-500 transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+      <section class="pt-40 text-black text-center">
+          <div class="max-w-4xl mx-auto px-4">
+              <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+              <p class="text-xl md:text-2xl max-w-2xl mx-auto">Drop us a message or visit us at our café. </p>
+          </div>
+      </section>
+      <!-- Info Section (2x2 boxes) -->
+<section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+  
+  <!-- Address -->
+  <div class="bg-white rounded-xl shadow-md px-16 py-8 text-center border-custom flex flex-col items-center gap-4 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="text-orange-600 text-3xl md:text-4xl">
+      <i class="fas fa-map-marker-alt"></i>
+    </span>
+    <div>
+      <h3 class="font-bold text-xl mb-2 text-orange-600">ADDRESS</h3>
+      <a href="https://maps.app.goo.gl/N968aVoHU6pFa8zx7" class="hover:underline text-gray-700">
+        Blk 8 Lot 4 Double L San Isidro, Rodriguez, Rizal, Philippines
+      </a>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="bg-white rounded-xl shadow-md px-16 py-8 text-center border-custom flex flex-col items-center gap-4 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="text-orange-600 text-3xl md:text-4xl">
+      <i class="fas fa-phone-alt"></i>
+    </span>
+    <div>
+      <h3 class="font-bold text-xl mb-2 text-orange-600">CONTACTS</h3>
+      <p class="text-gray-700">0977 115 6720</p>
+    </div>
+  </div>
+
+  <!-- Serving Hours -->
+  <div class="bg-white rounded-xl shadow-md px-16 py-8 text-center border-custom flex flex-col items-center gap-4 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="text-orange-600 text-3xl md:text-4xl">
+      <i class="fas fa-clock"></i>
+    </span>
+    <div>
+      <h3 class="font-bold text-xl mb-2 text-orange-600">SERVING HOURS</h3>
+      <p class="text-gray-700">Mon - Fri: 10:00 AM - 10:30 PM</p>
+      <p class="text-gray-700">Sat - Sun: 11:00 AM - 11:00 PM</p>
+    </div>
+  </div>
+
+  <!-- Socials -->
+  <div class="bg-white rounded-xl shadow-md px-16 py-8 text-center border-custom flex flex-col items-center gap-4 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+    <span class="text-orange-600 text-3xl md:text-4xl">
+      <i class="fas fa-share-alt"></i>
+    </span>
+    <div>
+      <h3 class="font-bold text-xl mb-2 text-orange-600">SOCIAL</h3>
+      <div class="flex items-center space-x-2 justify-center">
+        <a href="https://www.facebook.com/profile.php?id=100095654345000" class="text-gray-700 text-2xl hover:text-orange-600 transition">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <span class="text-gray-700">| Czaeyra's Cafe and Resto</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-4 bg-orange-600 text-white">
+        <div class="border-t border-orange-400 mt-8 pt-8 text-center">
+          <p>© 2025 Czaeyra's Cafe and Resto. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Optional: Hide mobile menu when a link is clicked
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+    </script>
+  </body>
+  </html>

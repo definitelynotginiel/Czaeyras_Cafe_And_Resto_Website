@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9ad4475b45.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/CCR_Logo.png">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>About Us - Czaeyra's Cafe & Resto</title>
+</head>
+<body class="bg-yellow-50 text-gray-900">
+    <!-- Navbar -->
+  <header class="bg-black text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center space-x-2">
+        <a href="index.html"><img src="images/Logo.jpg.png" alt="Logo" class="w-24 h-24 md:w-28 md:h-28 "></a>
+        <h1 class="font-bold text-xl md:text-2xl">Czaeyra's Café and Resto</h1>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-lg hover:text-orange-500 transition">Home</a>
+        <a href="about.html" class="text-lg hover:text-orange-500 transition">About</a>
+        <a href="menu.html" class="text-lg hover:text-orange-500 transition">Menu</a>
+        <a href="contact.html" class="text-lg hover:text-orange-500 transition">Contact</a>
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <button id="mobileMenuBtn" class="text-white text-2xl md:hidden focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Navigation -->
+    <nav id="mobileMenu" class="md:hidden bg-black bg-opacity-95 absolute top-full left-0 w-full flex-col text-center space-y-4 py-6 px-4 hidden z-50">
+      <a href="index.html" class="block text-lg hover:text-orange-500 transition">Home</a>
+      <a href="about.html" class="block text-lg hover:text-orange-500 transition">About</a>
+      <a href="menu.html" class="block text-lg hover:text-orange-500 transition">Menu</a>
+      <a href="contact.html" class="block text-lg hover:text-orange-500 transition">Contact</a>
+    </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="pt-40 text-black text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto">Learn about the history of Czaeyra's Cafe and Resto.</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto border-custom rounded-xl p-8 bg-white shadow-custom">
+            <h2 class="text-3xl font-bold text-center mb-10 text-orange-600">Our Story</h2>
+            
+            <div class="grid md:grid-row-2 gap-10 items-center">
+                <div class="text-left text-sm md:text-lg space-y-6">
+                    <p>Czaeyra’s Cafe and Resto was first established in the year 2020, at the beginning of the Covid 19 pandemic in the Philippines and was first known as "CVWolf Cafe". This small cafe and restaurant was founded by the couple, Mr. Rhayon Joseph Fernandez and Mrs. Czarina Atienza.</p>
+                    <p>We started our business in a small space in Eastwood Residences, Rodriguez Rizal. The "Wolf" in the name of our Cafe comes from our business of breeding Alaskan Malamute dogs, which we are very passionate about.</p>
+                    <p>Some of our Alaskan Malamute dogs are inside of the CVWolf Cafe, they were there to entertain the customers while dining in and also to showcase them for selling. CVWolf is more than just a cafe and resto; it is a place where friendships are forged, families gather, and memories are made.</p>
+                </div>  
+                <div class="grid grid-cols-2 gap-4 justify-items-center">
+                    <!-- First card -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
+                      <img src="images/CCR_Logo.png" alt="Czaeyra's Cafe and Resto Logo" class="h-36 w-36">
+                      <p class="font-semibold text-center py-10 md:text-left">Czaeyra's Cafe and Resto Logo</p>
+                    </div>
+
+                    <!-- Second card -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-4">
+                      <img src="images/CvWolfLogo.jpg" alt="CVWolf Cafe Logo" class="h-36 w-36">
+                      <p class="font-semibold text-center py-10 md:text-left ">CVWolf Cafe Logo</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Story Section -->
+    <section class="py-16 px-4 bg-white text-sm md:text-lg">
+        <div class="max-w-6xl mx-auto border-custom rounded-xl p-8 bg-yellow-50 shadow-custom">
+            <div class="">
+                <p class="mb-6">CVWolf Cafe was also featured in a vlog by the social media influencer "Ewic Mukbang". They made a Mukbang vlog for the cafe, showcasing our delicious food and the warm atmosphere of our cafe.
+                <a href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FEwicMukbangFoodBlog%2Fvideos%2F1208516939622801%2F&show_text=false&width=560&t=0" 
+                  target="_blank" 
+                  class="text-blue-600 underline">
+                  Watch here
+                </a></p>
+                <p class="mt-8 mb-6">However, our business faced financial challenges and bankruptcy, eventually leading to the closing of CVWolf Cafe. But in the year 2025, after recovering from financial problems, we are finally able to open our cafe and restaurant again, this time with a new name: "Czaeyra's Cafe and Resto".</p>
+                <p>Although the showcasing of Alaskan Malamute dogs is no longer in our new store, we sought to revive the good ambience and delicious food that CVWolf Cafe was known for. We are now located in Double L, San Jose, Rodriguez Rizal, Philippines. Czaeyra's Cafe and Resto was first opened on January 18, 2025. Its nearest landmark is Primark, Double L Branch.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4 mt-10">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="h-64 bg-cover bg-center rounded-md" style="background-image: url('images/FrontStore.jpg')"></div>
+                    <p class="text-center mt-3 font-semibold">Czaeyra's Cafe and Resto Store, located in Double L, Rodriguez Rizal. (2025)</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="h-64 bg-cover bg-center rounded-md" style="background-image: url('images/CvWolfStore.jpg')"></div>
+                    <p class="text-center mt-3 font-semibold">CVWolf Cafe store, located in Eastwood Residences, Rodriguez Rizal. (2021)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="py-16 px-4 text-black text-sm md:text-lg">
+        <div class="max-w-6xl mx-auto border-custom rounded-xl p-8 bg-white  shadow-custom">
+            <h2 class="text-3xl font-bold text-center mb-10 text-orange-600">About the Founders</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <p class="mb-6">As a newly opened café and restaurant in the area, we aim to make Czaeyra's Cafe and Resto well-known in Rodriguez, Rizal—and eventually, recognized by a wider audience. Whether you're a resident of Rodriguez or a tourist visiting Montalban, we warmly invite you to drop by our small café and restaurant to enjoy quality food, professionally prepared by our dedicated staff!</p>
+                    <p class="mb-6">We strongly believe that businesses that started from humble beginnings operated with dedication and passion would grow into a successful and wealthy business. Come to our small Cafe and Resto and help us fulfill our vision!</p>
+                    <p> Watch our sneak peek of our grand opening, <a href="https://www.facebook.com/100095654345000/videos/1304860231280764/" 
+                          target="_blank" 
+                          class="text-blue-600 underline">
+                          watch it on our Facebook page.
+                        </a>
+                    </p>
+                </div>
+                <div class="space-y-8">
+                    <div class="bg-yellow-50 p-6 rounded-lg shadow-md">
+                        <img src="images/OwnersandWebPublisher.png" alt="Founders" class="w-full h-128 rounded-md mb-4">
+                        <p class="text-center">Mr. Rhayon (in the left) and Mrs. Czarina (in the middle) together with Ram, one of the publishers of this website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Gallery -->
+    <section class="py-16 px-4 bg-white text-black text-sm md:text-lg">
+        <div class="max-w-6xl mx-auto border-custom rounded-xl p-8 bg-yellow-50 shadow-custom">
+            <h2 class="text-3xl font-bold text-center mb-6 text-orange-600">Customers' Gallery</h2>
+            <p class="text-center mb-10 max-w-3xl mx-auto">Here are the photos of our customers since our opening in January 18, 2025. They are our very first customers and considered to be part of the history of Czaeyra's Cafe and Resto</p>
+            
+            <!-- Portrait Images Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10">
+                <img src="images/CustomerDining1.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining2.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining3.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining4.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining5.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining6.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining7.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining8.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining9.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining10.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining11.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDining12.jpg" class="w-full h-48 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+            </div>
+            
+            <!-- Landscape Images Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+                <img src="images/CustomerDiningL1.jpg" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDiningL2.jpg" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDiningL3.jpg" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDiningL4.jpg" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+                <img src="images/CustomerDiningL5.jpg" class="w-full h-64 object-cover rounded-lg cursor-pointer transition-slow hover:scale-105" onclick="enlargeImage(this)">
+            </div>
+            
+            <p class="text-center max-w-3xl mx-auto">We are warmly welcoming you to visit our Cafe and Resto. Invite your partner, friends, classmates or family members to dine in to our store and create wonderful memories!</p>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center hidden" onclick="closeModal()">
+        <div class="max-w-4xl w-full p-4">
+            <img id="modalImage" class="w-full rounded-lg shadow-2xl" src="" alt="Enlarged image">
+            <button class="absolute top-4 right-4 text-white text-3xl" onclick="closeModal()">&times;</button>
+        </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-orange-600 text-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg mb-4">ADDRESS</p>
+          <a href="https://maps.app.goo.gl/N968aVoHU6pFa8zx7" class="hover:underline">
+            Blk 8 Lot 4 Double L San Isidro, Rodriguez, Rizal, Philippines
+          </a>
+        </div>
+        
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg mb-4">CONTACTS</p>
+          <p>0977 115 6720</p>
+        </div>
+        
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg mb-4">SOCIAL</p>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=100095654345000" class="text-white text-2xl hover:text-yellow-200 transition">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <p class="text-white">| Czaeyra's Cafe and Resto</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-orange-400 mt-8 pt-8 text-center">
+        <p>© 2025 Czaeyra's Cafe and Resto. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-orange-600 text-white p-3 rounded-full shadow-md hover:bg-orange-700 transition opacity-0 invisible">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+    <script>
+        // Image modal functionality
+        function enlargeImage(element) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = element.src;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Back to top button
+    const backToTopBtn = document.getElementById("backToTop");
+    
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.classList.remove("opacity-0", "invisible");
+        backToTopBtn.classList.add("opacity-100", "visible");
+      } else {
+        backToTopBtn.classList.remove("opacity-100", "visible");
+        backToTopBtn.classList.add("opacity-0", "invisible");
+      }
+    };
+    
+    backToTopBtn.addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Optional: Hide mobile menu when a link is clicked
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

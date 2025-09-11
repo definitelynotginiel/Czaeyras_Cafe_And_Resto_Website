@@ -1,0 +1,1198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Josefin Sans', sans;
+  background-image: url('images/fandb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: #020202;
+  display: flex;
+  align-items: auto;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  padding-left: 3.5rem;
+  z-index: 1000;
+}
+
+
+.logo img {
+   height: 80px;
+  width: 80px;
+  object-fit: contain;
+  margin-left: 2rem;
+  margin-top: 10px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 7rem;
+  padding-right: 3.5rem;
+  font-weight: 550;
+  margin-top: 15px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcae5; 
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.border-line {
+  width: 100%;
+  height: 35px; 
+  background: linear-gradient(
+    to bottom,
+    #AC600A 0px 20px,         
+    transparent 20px 30px,   
+    #AC600A 30px 35px       
+  );
+  margin:40px 0;
+}
+.border-line-2 {
+  width: 100%;
+  height: 35px; 
+  background: linear-gradient(
+    to bottom,
+    #AC600A 0px 5px,      
+    transparent 5px 15px,  
+    #AC600A 15px 35px       
+  );
+  margin:40px 0;
+}
+
+.double-border {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 95%;
+  border: 15px solid #AC600A;
+  height: 900px;
+  background-color: #FEF7E7;
+  margin-bottom: 120px;
+}
+
+.inner-box {
+  height: 825px;
+  padding: 30px;
+  width: 100%;
+  border: 5px solid white; 
+  box-sizing: border-box;
+}
+
+.inner-box p {
+  color: #724109;
+  margin-bottom: 40px;
+}
+
+
+/*This section contains styles for Menu*/
+
+/* Styling for "Our Menu" */
+.menu-header .menu-title {
+    color: #724109; /* Example: Sets the text color to dark gray */
+    font-size: 3.5rem; /* Example: Makes the font size larger */
+    font-weight: 700;
+    font-family: 'Josefin Sans',sans-serif; /* Example: Sets a clean sans-serif font */
+    margin-bottom: 10px; /* Example: Adds some space below the title */
+    text-transform: uppercase; /* Example: Converts text to uppercase */
+    letter-spacing: 2px; /* Example: Adds spacing between letters */
+}
+
+/* Styling for "Delicious meals and refreshing drinks made with love" */
+.menu-header .menu-subtitle {
+    color: #724109; /* Example: Sets the text color to a lighter gray */
+    font-size: 30px; /* Example: Sets the font size */
+    font-family: 'Josefin Sans',sans-serif; /* Example: Sets a serif font */
+    line-height: 1.5; /* Example: Sets line spacing */
+    margin-top: 5px; /* Example: Adds some space above the subtitle */ 
+    font-weight: 500;
+}
+
+/* General styling for the page header for context */
+.menu-header {
+    background-color: #faeccc; /* Example: Light background color */
+    padding: 20px 0; /* Example: Top and bottom padding */
+    border-bottom: 1px solid #faeccc; /* Example: A subtle bottom border */
+    text-align: center; /* Ensures content inside is centered */
+    margin-bottom: 140px;
+}
+
+/* In your main.css */
+
+
+.card {
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Border radius of 12px */
+    border: 2px solid #AC600A; /* 2px solid border with color #AC600A */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for presence */
+    margin-bottom: 20px; /* Space between cards */
+    overflow: hidden; /* Ensures content stays within rounded corners and handles image overflow */
+
+    /* DECREASED HEIGHT FOR ALL CARDS */
+    height: 300px; /* **Adjust this value to your desired smaller uniform height.** */
+
+    /* Flexbox properties to manage content inside fixed height card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content and pushes price/footer to bottom */
+}
+
+/* Styles for the image area within the card */
+.card .card-image {
+    /* DECREASED HEIGHT FOR CARD IMAGES (for food cards) */
+    height: 155px; /* **Adjust this value as well if you have images.** */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0; /* Match card radius on top corners */
+    flex-shrink: 0; /* Prevent image from shrinking */
+    
+}
+
+
+
+/* Styles for the content area within the card */
+.card .card-content {
+    flex-grow: 1; /* Allows content area to take remaining space */
+    padding: 15px; /* Slightly decreased padding for smaller cards */
+    overflow: hidden; /* Hide any content that goes beyond the fixed height */
+    position: relative; /* For ellipsis positioning */
+    display: flex; /* Make card-content a flex container to manage its children */
+    flex-direction: column;
+    justify-content: space-between; /* Distribute content vertically within content area */
+}
+
+/* Styles for titles within cards */
+.card .card-content .card-title,
+.card .card-content .card-title-sm {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 3px; /* Adjusted spacing below title */
+    color: #724109;
+    font-size: 1.3em; /* Slightly decreased font size for titles */
+    font-weight: 600;
+}
+
+/* Styles for paragraph text within cards */
+.card .card-content .card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em; /* Adjusted line-height */
+    max-height: 2.6em; /* line-height * line-clamp (1.3em * 2 = 2.6em) */
+    margin-bottom: 10px; /* Space above price/buttons */
+    color: #724109;
+    font-size: 12px; /* Slightly decreased font size for text */
+}
+
+.milktea-card-text { /* Targeted selector for milk tea card texts */
+        font-size:10px; /* Decreased font size for card text, e.g., from 0.9em to 0.8em */
+        margin-bottom: 10px;
+    }
+
+.milktea-card-price {
+    font-size: 15px; /* Slightly decreased font size for price */
+    font-weight: 700;
+    color: #AC600A;
+}
+
+
+
+
+/* Styles for price and special badge container */
+.card .card-content .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.card .card-content .card-price {
+    font-size: 1.2em; /* Slightly decreased font size for price */
+    font-weight: 700;
+    color: #AC600A;
+}
+
+.second-row-adjustment {
+    position: relative;
+    top: -20px; /* Adjust this value as needed. Try -10px, -30px, etc. */
+}
+
+.milk-tea-section .card .card-image {
+        height: 180px; /* Smaller height for Milk Tea card images */
+        background-size: cover;
+        background-position: center;
+    }
+    /*
+     * CSS for the Ramen section (for comparison, assuming they are larger)
+     * You would have similar CSS for your Ramen cards, perhaps with a height of 200px or more.
+     */
+    /* Example (if you had a .ramen-section class):
+    .ramen-section .card .card-image {
+        height: 220px; /* Larger height for Ramen card images */
+        /* background-size: cover; */
+        /* background-position: center; */
+    /* } */
+
+    /* Adjust the spacing for the second row of cards */
+    .second-row-adjustment {
+        position: relative;
+        top: -20px; /* Adjust this value to move the row up/down */
+        align-items: center;
+    }
+
+    /* General card content styling for consistency */
+    .card-content {
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 1.4em; /* Slightly smaller title for smaller cards */
+        line-height: 1.2;
+    }
+    .card-text {
+        font-size: 0.9em; /* Smaller text */
+        margin-bottom: 10px;
+    }
+    .card-price {
+        font-size: 1.3em; /* Smaller price text */
+        font-weight: bold;
+    }
+
+/* Materialize badges for "SPECIAL" */
+.new.badge {
+    background-color: #AC600A !important;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px; /* Slightly decreased padding for badge */
+    border-radius: 5px;
+    font-size: 0.8em; /* Slightly decreased font size for badge */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    color: #724109;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.lalamove-logo {
+    width: 410px; /* Desired width */
+    height: 200px; /* Desired height */
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  cursor: pointer;
+  border-bottom: 2px solid #AC600A;
+}
+
+/* Menu Page Styles for Czaeyra's Cafe and Resto */
+
+/*This section contains styles for Menu*/
+
+/* Card Container Layout */
+.menu-section {
+  margin: 40px 0;
+}
+
+.menu-intro p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #724109;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.menu-subtitle {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #724109;
+}
+
+.menu-info-text{
+  font-size: 18px;
+  font-weight: 700;
+  color: #724109;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: #fff;
+  border: 2px solid #8c4b00;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px; /* or any consistent height you want */
+  object-fit: cover;
+  border: 2px solid #724109;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Special Offers Card Styling */
+.hero-section .card {
+  width: 100%;
+  height: 450px;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 2px solid #AC600A;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.lalamove-notif{
+  font-size: 27px;
+  color: #724109;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.lalamove-pickup{
+  margin-top: 10px;
+  font-size: 18px;
+  color: #724109;
+}
+
+.hero-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.hero-section .card-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-bottom: 2px solid #AC600A;
+}
+
+.hero-section .card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-section .card-title {
+  font-size: 1.4rem;
+  color: #724109;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.hero-section .card-price.card-price-special {
+  font-size: 1rem;
+  color: #AC600A;
+  font-weight: 600;
+}
+
+.lalamove-logo {
+  width: 350px;
+  height: 180;
+  border: 2px solid #AC600A;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lalamove-logo:hover {
+  transform: scale(1.05);
+}
+
+
+.menu-card img:hover {
+  transform: scale(1.05);
+}
+
+.menu-card .item-title {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #724109;
+}
+
+.menu-card .item-price {
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #AC600A;
+  margin-top: 5px;
+}
+
+
+/* Zoom modal styling */
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-modal.show {
+  display: flex;
+}
+
+.zoom-modal-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.zoom-modal-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*End of styles for Menu*/
+
+
+
+
+/* If you keep background-image for card-image, then your existing CSS should work for that. */
+
+
+
+
+/*End of the menu section styles*/
+
+/*This is the section for About Us*/
+.about-double-border { /* New class name */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 95%;
+    border: 15px solid #AC600A;
+    height: auto;
+    background-color: #FEF7E7;
+    margin-top: 10px;
+}
+
+.about-inner-box { /* New class name */
+    height: auto;
+    padding: 30px;
+    width: 100%;
+    border: 5px solid white;
+    box-sizing: border-box;
+    min-height: 450px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.about-cards-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end; /* Align cards to the right */
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #724109;
+    text-align: justify;
+}
+
+.about-cards-container .card {
+    background-color: #fff3e7; /* White background for cards */
+    height: 280px; /* Increased height for larger square shape */
+    width: 280px; /* Increased width for larger square shape */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.about-cards-container .card .card-image {
+    height: 180px; /* Increased height for the image part of the card */
+}
+
+.about-cards-container .card .card-title {
+    font-size: 15px;
+    font-weight: 650;
+    color: #724109;
+    margin-bottom: 5px;
+}
+
+.about-cards-container .card .card-text {
+    font-size: 13px;
+    color: #724109;
+    line-height: 1.4;
+}
+
+.about-cards-title {
+    font-size: 50px;
+    color: #724109;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.video-container.about-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.video-container.about-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive adjustments (Consolidated) */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about-text, .about-cards-container {
+        min-width: unset;
+        width: 100%;
+    }
+    .about-cards-container {
+        align-items: center;
+    }
+    .about-cards-container .card {
+        width: 100%;
+        height: auto;
+    }
+    .about-cards-container .card .card-image {
+        height: 100px;
+    }
+}
+
+hr {
+  border: none;
+  border-top: solid #724109;
+}
+
+
+.card-content {
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+
+.owner-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; /* Responsive support */
+  padding: 20px;
+}
+
+.owner-info-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.owner-info-left p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #724109;
+  text-align: justify;
+}
+
+.video-title {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #724109;
+  align-items: center;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video-block {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns the title and iframe to the left */
+  gap: 10px;
+}
+
+
+.owner-info-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; /* Align left */
+}
+
+.owner-card {
+  width: 450px;
+  height: 450px;
+  background-color: #f9f9f9;
+  border: 2px solid #AC600A;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0; /* remove padding, we'll control inside */
+}
+
+.card-img {
+  width: 100%;
+  height: 80%; /* Take up top 80% of the card */
+  object-fit: cover; /* Fills entire area without squishing */
+  display: block;
+}
+
+.owner-card p {
+  font-size: 14px;
+  margin: 10px;
+  color: #724109;
+  height: 10%; /* Remaining space below the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .owner-card {
+    width: 100%;
+    height: auto; /* Stack vertically, natural height */
+  }
+}
+
+
+.publisher-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.publisher-card {
+  width: 500px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.publisher-title {
+  background-color: #8c4b00;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.publisher-body {
+  display: flex;
+  height: 250px;
+}
+
+.publisher-img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 2px solid #8c4b00;
+}
+
+.publisher-info {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+  background-color: #f3e7cc;
+}
+
+.publisher-info h4 {
+  transform: translateY(-50px);
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.publisher-info p {
+  transform: translateY(-20px);
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.icon-lowered {
+  transform: translateY(4px); /* Adjust value as needed */
+  display: inline-block; /* required for transform to take effect */
+}
+
+.email-text {
+  transform: translateY(8px);
+  display: inline-block; /* Required for transform to take effect */
+  color: #AC600A;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .owner-info {
+        flex-direction: column;
+    }
+
+    .owner-card {
+        height: auto;
+    }
+
+    .owner-card .card-image {
+        height: 120px;
+    }
+}
+
+.section-subtitle-publisher {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #724109;
+  text-align: center;
+  font-weight: 700;
+}
+
+.publisher-description {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.publisher-description p {
+  font-size: 18px;
+  color: #724109;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.capstone-card {
+  width: 100%;
+  height: 700px;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff8f0;
+  border: 2px solid #724109;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden; /* Ensures the image stays inside the card */
+}
+
+.capstone-img {
+  width: 100%;
+  height: 630px; /* You can adjust this height */
+  object-fit: cover;
+  display: block;
+}
+
+.capstone-caption {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #724109;
+  background-color: #fff8f0;
+}
+
+.gallery-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.portrait-row,
+.landscape-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.customers-gallery-description {
+  color: #724109;       /* Set your desired color */
+  font-size: 18px;      /* Adjust size as needed */
+  line-height: 1.8;     /* Optional: improves readability */
+  text-align: center;   /* Optional: center the paragraph */
+}
+
+
+.gallery-img {
+  border: 3px solid #AC600A;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.portrait {
+  width: 180px;      /* Increased from 120px */
+  height: 235px;     /* Increased from 180px */
+  object-fit: cover;
+}
+
+.landscape {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal img.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  border: 5px solid #ffaf36;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .about-double-border,
+  .double-border,
+  .carousel-container,
+  .landscape-carousel-container {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .about-inner-box,
+  .inner-box {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .opening {
+    flex-direction: column;
+  }
+
+  .opening-left,
+  .opening-right {
+    width: 100%;
+  }
+
+  .carousel-container,
+  .landscape-carousel-container {
+    max-width: 100%;
+  }
+
+  .gallery-img.portrait {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-section iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .menu-card-section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-container,
+  .landscape-carousel-container {
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .video-section h3,
+  .section-title,
+  .features,
+  .Schools,
+  .Menu-Preview {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-inner-box p,
+  .paragraph-text,
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+
+  .slider-btn {
+    padding: 6px 10px;
+  }
+}
+
+
+/* Enlarged Image Modal */
+.enlarged-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.enlarged-container img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  border: 5px solid #AC600A;
+}
+
+
+.contacts-czaeyra{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #724109;
+  font-weight: 700;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+}
+
+
+.contact-box {
+  display: flex;
+  align-items: center; /* Changed from 'flex-start' to 'center' */
+  border: 2px solid #AC600A;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: justify;
+}
+
+.contacts-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #724109;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin: 30px 0;
+}
+
+
+.contact-icon {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;  /* Keeps aspect ratio and avoids overflow */
+  margin-right: 20px;
+  display: block;
+  transform: translateX(120px);
+}
+
+
+.contact-info {
+  display: flex;
+  flex-direction: column;     /* Vertically center all text */
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #724109;
+  padding: 5px 0;
+  text-align: justify;         /* Justify the text inside paragraphs */
+  height: 100%;                /* Ensure it stretches full height of the container */
+}
+
+
+
+
+
+.contact-info p {
+  margin: 5px 0;
+  text-align: justify;
+  transform: translateX(290px);
+}
+
+
+.contact-info a {
+  color: #724109;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #724109;
+}
+
+
+
+
+/* Footer Styles */
+footer.page-footer {
+  margin-top: 50px;
+  height: 200px;
+  background-color: #AC600A;
+  width: 100%;
+}
+
+.white-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.white-text-p {
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+  display: flex;
+}
+
+.footer-col {
+  margin-bottom: 40px;
+  padding-right: 20px;
+  gap: 100px;
+}
+
+.footer-col ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: white;
+}
