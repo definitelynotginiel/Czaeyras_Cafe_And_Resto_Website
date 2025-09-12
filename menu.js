@@ -7,6 +7,20 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
   const mobileSelect = document.getElementById("mobileCategorySelect");
   const menuTitle = document.getElementById("menuTitle");
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname.split("/").pop(); 
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add(
+          "text-pink-500",      // highlight color
+          "border-b-2",         // underline effect
+          "border-pink-500",    // pink underline
+        );
+      }
+    });
+  });
   // Open overlay
   openBtn.addEventListener("click", () => {
     overlay.classList.remove("hidden");
@@ -49,13 +63,13 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
   btn.addEventListener('click', () => {
     // Reset all desktop buttons
     desktopButtons.forEach(b => {
-      b.classList.add('bg-white', 'text-orange-600');
-      b.classList.remove('bg-orange-600', 'text-white');
+      b.classList.add('category-desktop');
+      b.classList.remove('category-desktop-selected');
     });
 
     // Highlight clicked desktop button
-    btn.classList.add('bg-orange-600', 'text-white');
-    btn.classList.remove('bg-white', 'text-orange-600');
+    btn.classList.add('category-desktop-selected');
+    btn.classList.remove('category-desktop');
 
     showCategory(btn.dataset.category);
   });

@@ -12,22 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
-<body class="bg-yellow-50 text-gray-900">
+<body>
 
   <!-- Navbar -->
-  <header class="bg-black text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+  <section class="bg-black text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
       <div class="flex items-center space-x-2">
-        <a href="index.html"><img src="images/Logo.jpg.png" alt="Logo" class="w-24 h-24 md:w-28 md:h-28 "></a>
-        <h1 class="font-bold text-xl md:text-2xl">Czaeyra's Café and Resto</h1>
+        <a href="index.html"><img src="images/Logo.jpg.png" alt="Logo" class="w-24 h-24 md:w-32 md:h-32"></a>
+        <h1 class="font-bold text-xl md:text-3xl">Czaeyra's Café and Resto</h1>
       </div>
       
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-lg hover:text-orange-500 transition">Home</a>
-        <a href="about.html" class="text-lg hover:text-orange-500 transition">About</a>
-        <a href="menu.html" class="text-lg hover:text-orange-500 transition">Menu</a>
-        <a href="contact.html" class="text-lg hover:text-orange-500 transition">Contact</a>
+        <a href="index.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Home</a>
+        <a href="about.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
+        <a href="menu.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
+        <a href="contact.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
       </nav>
       
       <!-- Mobile menu button -->
@@ -37,47 +37,56 @@
     </div>
     <!-- Mobile Navigation -->
     <nav id="mobileMenu" class="md:hidden bg-black bg-opacity-95 absolute top-full left-0 w-full flex-col text-center space-y-4 py-6 px-4 hidden z-50">
-      <a href="index.html" class="block text-lg hover:text-orange-500 transition">Home</a>
-      <a href="about.html" class="block text-lg hover:text-orange-500 transition">About</a>
-      <a href="menu.html" class="block text-lg hover:text-orange-500 transition">Menu</a>
-      <a href="contact.html" class="block text-lg hover:text-orange-500 transition">Contact</a>
+      <a href="index.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Home</a>
+      <a href="about.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
+      <a href="menu.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
+      <a href="contact.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
     </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="mt-20 py-12 px-4 text-white">
-    <div class="max-w-5xl mx-auto">
-      <div class="flex flex-col md:flex-row md:items-start gap-10">
-        <!-- Left: Text -->
-        <div class="w-full md:w-1/2 py-10 my-10  text-center md:text-left">
-          <h2 class="text-2xl md:text-2xl text-[#724109] font-medium animate-pulse">SIT, EAT AND RELAX @</h2>
-          <h1 class="text-6xl md:text-6xl font-extrabold text-orange-500 mt-2 mb-4">CZAEYRA'S CAFE & RESTO</h1>
-          <p class="text-xl md:text-2xl font-semibold bg-[#724109] bg-opacity-50 p-3 rounded-lg inline-block md:w-auto">MILKTEA • BURGER • UNLI WINGS</p>
-          <div class="mt-8">
-            <a href="#menu" class="inline-block px-8 py-3 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 transition transform hover:scale-105">
-              Explore Menu
-            </a>
-          </div>
-        </div>
-        <!-- Right: Video -->
-        <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
-          <div class="max-w-2xl w-full rounded-xl overflow-hidden shadow-custom">
-            <video autoplay loop muted playsinline disablepictureinpicture class="w-full">
-              <source src="images/rightsection.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <!-- About Section -->
-  <section class="py-12 sm:py-16 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8 text-orange-600">WHY US</h2>
+  <!-- Hero Section with Background Image + Overlay -->
+<section class="relative mt-20 py-24 px-4 text-white bg-cover bg-center" 
+         style="background-image: url('images/hero-bg.jpg');">
+
+  <!-- Overlay (darkens background for readability) -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <!-- Content stays on top -->
+  <div class="relative max-w-5xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-start gap-10">
+
+      <!-- Left: Text -->
+      <div class="w-full  py-10 my-10 text-center md:text-left">
+        <h2 class="text-2xl md:text-3xl md:pl-4 text-pink-300 font-medium animate-pulse">
+          SIT, EAT AND RELAX @
+        </h2>
+        <h1 class="text-6xl md:text-8xl font-extrabold text-pink-500 mt-2 mb-4">
+          CZAEYRA'S CAFE & RESTO
+        </h1>
+        <p class="text-xl md:text-3xl font-semibold text-pink-300 bg-pink-400 bg-opacity-25 p-3 rounded-lg inline-block md:w-auto">
+          MILKTEA • BURGER • UNLI WINGS
+        </p>
+        <div class="mt-8">
+          <a href="#menu" 
+             class="inline-block px-8 py-3 bg-pink-600 text-white font-bold rounded-full hover:bg-pink-700 transition transform hover:scale-105">
+            Explore Menu
+          </a>
+        </div>
+      </div>
+
       
-      <div class="border-custom rounded-xl p-6 bg-yellow-50 shadow-custom">
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section class="py-12 sm:py-16 px-6 bg-pink-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8 text-pink-500">WHY US</h2>
+      
+      <div class="border-custom rounded-xl p-6 bg-pink-50 shadow-custom">
         <p class="text-sm sm:text-lg leading-relaxed text-center">
           Czaeyra's Café & Resto is a very relaxing place where you can have a sip of your favorite Milktea, Coffee or Frappé. We also serve Burgers, Fries, Ramens and Chicken Wings. You can choose from a variety of flavors available in our menu.
         </p>
@@ -94,10 +103,10 @@
             </div>
           </div>
           <!-- Controls -->
-          <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-orange-400 text-white p-2 rounded-full shadow-md hover:bg-orange-500 transition">
+          <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full shadow-md hover:bg-pink-700 transition">
             <i class="fas fa-chevron-left"></i>
           </button>
-          <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-orange-400 text-white p-2 rounded-full shadow-md hover:bg-orange-500 transition">
+          <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full shadow-md hover:bg-pink-700 transition">
             <i class="fas fa-chevron-right"></i>
           </button>
           
@@ -119,11 +128,11 @@
   </section>
 
   <!-- Menu Preview -->
-  <section id="menu" class="py-12 sm:py-16 px-6 bg-yellow-50">
+  <section id="menu" class="py-12 sm:py-16 px-6 bg-pink-50">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8 text-orange-600">PREVIEW OF OUR MENU!</h2>
-      
-      <div class="border-custom rounded-xl p-6 bg-white shadow-custom">
+      <h2 class="text-3xl font-bold text-center mb-8 text-pink-500">PREVIEW OF OUR MENU!</h2>
+
+      <div class="border-custom rounded-xl p-6 bg-pink-100 shadow-custom">
         <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
           <div class="menu-item bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
             <img src="images/Menufriedchicken.jpg" alt="Fried Chicken" class="w-full h-40 object-cover rounded-md mb-3">
@@ -152,7 +161,7 @@
         </div>
         
         <div class="text-center mt-8">
-          <a href="menu.html"><button class="px-8 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition transform hover:scale-105 shadow-md">
+          <a href="menu.html"><button class="px-8 py-3 bg-pink-600 text-white font-semibold rounded-full hover:bg-pink-700 transition transform hover:scale-105 shadow-md">
             VIEW FULL MENU
           </button></a>
         </div>
@@ -161,21 +170,21 @@
   </section>
 
   <!-- Promo Section -->
-  <section class="py-12 sm:py-28 px-6 bg-white text-center">
+  <section class="py-12 sm:py-28 px-6 bg-pink-100 text-center">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-2 text-orange-600">AVAIL OUR LOYALTY PROMO CARD!</h2>
+      <h2 class="text-3xl font-bold mb-2 text-pink-500">AVAIL OUR LOYALTY PROMO CARD!</h2>
       <p class="text-lg mb-6">Get rewarded for your loyalty!</p>
 
-      <div class="border-custom rounded-xl p-6 bg-yellow-50 shadow-custom">
+      <div class="border-custom rounded-xl p-6 bg-pink-50 shadow-custom">
         <img src="images/promo.png" alt="Loyalty Promo Card" class="w-full max-w-md mx-auto rounded-lg shadow-md">
         
-        <div class="mt-6 p-4 bg-orange-100 rounded-lg">
-          <p class="text-lg font-semibold text-orange-700">
+        <div class="mt-6 p-4 bg-pink-300 rounded-lg">
+          <p class="text-lg font-semibold text-pink-500 ">
             ON YOUR 12TH PURCHASE WORTH ABOVE 150 PHP, GET FREE 3 PCS WINGS WITH RICE OR FRIES!
           </p>
         </div>
         
-        <p class="mt-6 text-gray-700">
+        <p class="mt-6 text-black">
           Ask our staff about our loyalty program on your next visit!
         </p>
       </div>
@@ -183,7 +192,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-12 bg-orange-600 text-white">
+  <footer class="py-12 bg-pink-600 text-white">
     <div class="max-w-4xl mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="text-center md:text-left">
@@ -201,7 +210,7 @@
         <div class="text-center md:text-left">
           <p class="font-bold text-lg mb-4">SOCIAL</p>
           <div class="flex justify-center md:justify-start space-x-4">
-            <a href="https://www.facebook.com/profile.php?id=100095654345000" class="text-white text-2xl hover:text-yellow-200 transition">
+            <a href="https://www.facebook.com/profile.php?id=100095654345000" class="text-white text-2xl hover:text-pink-200 transition">
               <i class="fab fa-facebook"></i>
             </a>
             <p class="text-white">| Czaeyra's Cafe and Resto</p>
@@ -209,19 +218,33 @@
         </div>
       </div>
       
-      <div class="border-t border-orange-400 mt-8 pt-8 text-center">
+      <div class="border-t border-pink-500 mt-8 pt-8 text-center">
         <p>© 2025 Czaeyra's Cafe and Resto. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
   <!-- Back to Top Button -->
-  <button id="backToTop" class="fixed bottom-6 right-6 bg-orange-600 text-white p-3 rounded-full shadow-md hover:bg-orange-700 transition opacity-0 invisible">
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-pink-600 text-white p-3 rounded-full shadow-md hover:bg-pink-700 transition opacity-0 invisible">
     <i class="fas fa-arrow-up"></i>
   </button>
 
   <!-- Slider Script -->
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname.split("/").pop(); 
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add(
+          "text-pink-500",      // highlight color
+          "border-b-2",         // underline effect
+          "border-pink-500",    // pink underline
+        );
+      }
+    });
+  });
     const slider = document.getElementById("slider");
     const slides = slider.children.length;
     let index = 0;
