@@ -23,22 +23,21 @@
       </div>
       
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Home</a>
-        <a href="about.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
-        <a href="menu.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
-        <a href="contact.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
-        <!-- Theme Dropdown -->
-<div class="fixed top-4 right-4">
+<nav class="hidden md:flex items-center space-x-8">
+  <a href="index.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Home</a>
+  <a href="about.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
+  <a href="menu.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
+  <a href="contact.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
+
+  <!-- Theme Dropdown -->
   <select id="themeSelect" 
-          class="px-4 py-2 border rounded-lg bg-white text-gray-800 shadow">
+          class="text-xl px-3 py-1 border rounded-lg bg-white text-gray-800 shadow transition">
     <option value="pink">Pink</option>
     <option value="fuchsia">Fuchsia</option>
     <option value="violet">Violet</option>
     <option value="rose">Rose</option>
   </select>
-</div>
-      </nav>
+</nav>
       
       <!-- Mobile menu button -->
       <button id="mobileMenuBtn" class="text-white text-2xl md:hidden focus:outline-none">
