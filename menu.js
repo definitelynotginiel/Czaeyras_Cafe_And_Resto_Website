@@ -14,9 +14,9 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
     links.forEach(link => {
       if (link.getAttribute("href") === currentPage) {
         link.classList.add(
-          "text-pink-500",      // highlight color
+          "text-fuchsia-500",      // highlight color
           "border-b-2",         // underline effect
-          "border-pink-500",    // pink underline
+          "border-fuchsia-500",    // pink underline
         );
       }
     });
