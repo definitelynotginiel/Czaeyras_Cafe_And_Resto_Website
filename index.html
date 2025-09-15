@@ -28,6 +28,16 @@
         <a href="about.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
         <a href="menu.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
         <a href="contact.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
+        <!-- Theme Dropdown -->
+<div class="fixed top-4 right-4">
+  <select id="themeSelect" 
+          class="px-4 py-2 border rounded-lg bg-white text-gray-800 shadow">
+    <option value="pink">Pink</option>
+    <option value="fuchsia">Fuchsia</option>
+    <option value="violet">Violet</option>
+    <option value="rose">Rose</option>
+  </select>
+</div>
       </nav>
       
       <!-- Mobile menu button -->
@@ -316,6 +326,34 @@
       });
     });
   </script>
+  <script>
+  const themeSelect = document.getElementById("themeSelect");
 
+  themeSelect.addEventListener("change", (e) => {
+    const selected = e.target.value; // chosen theme name
+
+    document.querySelectorAll("*").forEach(el => {
+      el.classList.forEach(cls => {
+        // Match only Tailwind color classes that use pink/fuchsia/violet/rose
+        if (
+          cls.includes("pink") || 
+          cls.includes("fuchsia") || 
+          cls.includes("violet") || 
+          cls.includes("rose")
+        ) {
+          // Normalize to pink first
+          let baseClass = cls
+            .replace("fuchsia", "pink")
+            .replace("violet", "pink")
+            .replace("rose", "pink");
+
+          // Swap "pink" with the selected theme
+          const newClass = baseClass.replace("pink", selected);
+          el.classList.replace(cls, newClass);
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
