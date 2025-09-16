@@ -86,50 +86,57 @@
 
 
   <!-- About Section -->
-  <section class="py-12 sm:py-16 px-6 bg-pink-100">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8 text-pink-500">WHY US</h2>
-      
-      <div class="border-custom rounded-xl p-6 bg-pink-50 shadow-custom">
-        <p class="text-sm sm:text-lg leading-relaxed text-center">
-          Czaeyra's Café & Resto is a very relaxing place where you can have a sip of your favorite Milktea, Coffee or Frappé. We also serve Burgers, Fries, Ramens and Chicken Wings. You can choose from a variety of flavors available in our menu.
-        </p>
+<section class="py-12 sm:py-16 px-6 bg-pink-100">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8 text-pink-500">WHY US</h2>
 
-        <!-- Image Slider -->
-        <div class="relative mt-8 w-full max-w-lg mx-auto">
-          <div class="overflow-hidden rounded-xl shadow-lg">
-            <div id="slider" class="flex transition-transform duration-500 ease-in-out">
-              <img src="images/S1-1.jpg" class="w-full flex-shrink-0" alt="Cafe Interior">
-              <img src="images/S1-2.jpg" class="w-full flex-shrink-0" alt="Delicious Food">
-              <img src="images/S1-3.jpg" class="w-full flex-shrink-0" alt="Cozy Atmosphere">
-              <img src="images/S1-4.jpg" class="w-full flex-shrink-0" alt="Friendly Staff">
-              <img src="images/S1-5.jpg" class="w-full flex-shrink-0" alt="Healthy Options">
-            </div>
-          </div>
-          <!-- Controls -->
-          <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full shadow-md hover:bg-pink-700 transition">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full shadow-md hover:bg-pink-700 transition">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-          
-          <!-- Indicators -->
-          <div class="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
-            <span id="indicator1" class="h-2 w-2 bg-white rounded-full cursor-pointer"></span>
-            <span id="indicator2" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
-            <span id="indicator3" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
-            <span id="indicator4" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
-            <span id="indicator5" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
-          </div>
-        </div>
+    <div class="border-custom rounded-xl p-6 bg-pink-50 shadow-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+  
+  <!-- Left Text (combined both paragraphs) -->
+  <div class="space-y-6">
+    <p class="text-sm sm:text-lg leading-relaxed md:text-left">
+      Czaeyra's Café & Resto is a very relaxing place where you can have a sip of your favorite Milktea, Coffee or Frappé. We also serve Burgers, Fries, Ramens and Chicken Wings. You can choose from a variety of flavors available in our menu.
+    </p>
 
-        <p class="mt-6 text-sm sm:text-lg text-center">
-          We provide affordable meals, ideal for students and for anyone looking for budget friendly meals! Located near Primark, Sub Urban, Rodriguez, Rizal, an area where many people pass by on a daily basis. Several schools are also located near our café, making it a convenient spot for students.
-        </p>
-      </div>
+    <p class="text-sm sm:text-lg leading-relaxed md:text-left">
+      We provide affordable meals, ideal for students and for anyone looking for budget friendly meals! Located near Primark, Sub Urban, Rodriguez, Rizal, an area where many people pass by on a daily basis. Several schools are also located near our café, making it a convenient spot for students.
+    </p>
+  </div>
+
+  <!-- Right Slider -->
+  <div class="relative w-full">
+  <div class="overflow-hidden rounded-xl shadow-lg h-64 md:h-80 lg:h-96">
+    <div id="slider" class="flex transition-transform duration-500 ease-in-out h-full">
+      <img src="images/S1-1.jpg" class="w-full h-full object-cover flex-shrink-0" alt="Cafe Interior">
+      <img src="images/S1-2.jpg" class="w-full h-full object-cover flex-shrink-0" alt="Delicious Food">
+      <img src="images/S1-3.jpg" class="w-full h-full object-cover flex-shrink-0" alt="Cozy Atmosphere">
+      <img src="images/S1-4.jpg" class="w-full h-full object-cover flex-shrink-0" alt="Friendly Staff">
+      <img src="images/S1-5.jpg" class="w-full h-full object-cover flex-shrink-0" alt="Healthy Options">
     </div>
-  </section>
+  </div>
+    <!-- Controls -->
+    <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full shadow-md hover:bg-pink-700 transition">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full shadow-md hover:bg-pink-700 transition">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <!-- Indicators -->
+    <div class="absolute bottom-2 left-0 right-0 flex justify-center space-x-2">
+      <span id="indicator1" class="h-2 w-2 bg-white rounded-full cursor-pointer"></span>
+      <span id="indicator2" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
+      <span id="indicator3" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
+      <span id="indicator4" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
+      <span id="indicator5" class="h-2 w-2 bg-gray-300 rounded-full cursor-pointer"></span>
+    </div>
+  </div>
+
+</div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Menu Preview -->
   <section id="menu" class="py-12 sm:py-16 px-6 bg-pink-50">
