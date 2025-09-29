@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname.split("/").pop(); 
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add(
+          "text-pink-500",      // highlight color
+          "border-b-2",         // underline effect
+          "border-pink-500",    // pink underline
+        );
+      }
+    });
+  });
+  
 var swiper = new Swiper(".myPromoSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
