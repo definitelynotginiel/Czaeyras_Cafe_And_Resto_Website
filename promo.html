@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Czaeyra's Café & Resto - Promos</title>
+  <link rel="icon" type="image/x-icon" href="images/CCR_Logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9ad4475b45.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body class="bg-pink-50">
+    <style>
+    .myPromoSwiper {
+  padding-bottom: 3rem; /* creates extra space for pagination */
+}
+
+.myPromoSwiper .swiper-pagination {
+  bottom: 0 !important; /* force dots to bottom */
+  position: relative !important; /* makes it flow under the slides */
+  margin-top: 1rem; /* spacing between cards and dots */
+}
+.myPromoSwiper .swiper-button-prev,
+.myPromoSwiper .swiper-button-next {
+  top: 45% !important;         /* center vertically */
+  transform: translateY(-50%); /* shift back to true center */
+  color: #ec4899;              /* Tailwind pink-500 */
+}
+
+.myPromoSwiper .swiper-button-prev {
+  left: 0.5rem; /* move outside the card */
+}
+
+.myPromoSwiper .swiper-button-next {
+  right: 0.5rem; /* move outside the card */
+}
+
+</style>
+  <!-- Navbar -->
+  <section class="bg-black text-white fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center space-x-2">
+        <a href="index.html"><img src="images/Logo.jpg.png" alt="Logo" class="w-24 h-24 md:w-32 md:h-32"></a>
+        <h1 class="hidden lg:block font-bold md:text-3xl tracking-wide 
+               bg-gradient-to-r from-pink-500 to-pink-600 
+               bg-clip-text text-transparent drop-shadow-md">
+      Czaeyra's Café <span class="text-gray-800">&amp;</span> Resto
+    </h1>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Home</a>
+        <a href="about.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
+        <a href="menu.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
+        <a href="promo.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Promos</a>
+        <a href="contact.html" class="text-xl hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <button id="mobileMenuBtn" class="text-white text-2xl md:hidden focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Navigation -->
+    <nav id="mobileMenu" class="md:hidden bg-black bg-opacity-95 absolute top-full left-0 w-full flex-col text-center space-y-4 py-6 px-4 hidden z-50">
+      <a href="index.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Home</a>
+      <a href="about.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">About</a>
+      <a href="menu.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Menu</a>
+      <a href="promo.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Promos</a>
+      <a href="contact.html" class="block text-lg hover:text-pink-500 transition-all duration-300 hover:scale-105">Contact</a>
+    </nav>
+  </section>
+  <!-- Hero Section -->
+      <section class="pt-48 text-pink-500 text-center">
+          <div class="max-w-4xl mx-auto px-4">
+              <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Promos</h1>
+              <p class="text-xl md:text-2xl text-black max-w-2xl mx-auto">Check out our latest deals and discounts!</p>
+          </div>
+      </section>
+  
+  <!-- Promo Slider Section -->
+<section class="max-w-5xl mx-auto px-6 pb-16 my-12">
+  <div class="swiper myPromoSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Promo 1 -->
+      <div class="swiper-slide">
+        <div class="border-custom rounded-xl p-6 bg-white shadow-custom text-center">
+          <img src="images/promo.png" alt="Loyalty Promo Card" 
+               class="promo-image w-full h-64 object-contain mx-auto rounded-lg shadow-md bg-pink-100 cursor-pointer" >
+          <h2 class="mt-4 text-2xl font-bold text-pink-500">Loyalty Card Promo</h2>
+        </div>
+      </div>
+
+      <!-- Promo 2 -->
+      <div class="swiper-slide">
+        <div class="border-custom rounded-xl p-6 bg-white shadow-custom text-center">
+          <img src="images/buldak promo.jpg" alt="Promo 2" 
+               class="promo-image w-full h-64 object-contain mx-auto rounded-lg shadow-md bg-pink-100 cursor-pointer">
+          <h2 class="mt-4 text-2xl font-bold text-pink-500">BULDAK PROMO</h2>
+        </div>
+      </div>
+
+      <!-- Promo 3 -->
+      <div class="swiper-slide">
+        <div class="border-custom rounded-xl p-6 bg-white shadow-custom text-center">
+          <img src="images/unli wings promo.jpg" alt="Promo 3" 
+               class="promo-image w-full h-64 object-contain mx-auto rounded-lg shadow-md bg-pink-100 cursor-pointer">
+          <h2 class="mt-4 text-2xl font-bold text-pink-500">UNLI WINGS PROMO</h2>
+        </div>
+      </div>
+
+      <!-- Promo 4 -->
+      <div class="swiper-slide">
+        <div class="border-custom rounded-xl p-6 bg-white shadow-custom text-center">
+          <img src="images/combo promo.jpg" alt="Promo 4" 
+               class="promo-image w-full h-64 object-contain mx-auto rounded-lg shadow-md bg-pink-100 cursor-pointer">
+          <h2 class="mt-4 text-2xl font-bold text-pink-500">COMBO PROMO</h2>
+        </div>
+      </div>
+
+      <!-- Promo 5 -->
+      <div class="swiper-slide">
+        <div class="border-custom rounded-xl p-6 bg-white shadow-custom text-center">
+          <img src="images/milktea promo.jpg" alt="Promo 5" 
+               class="promo-image w-full h-64 object-contain mx-auto rounded-lg shadow-md bg-pink-100 cursor-pointer">
+          <h2 class="mt-4 text-2xl font-bold text-pink-500">MILKTEA PROMO</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation & Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev text-pink-500"></div>
+    <div class="swiper-button-next text-pink-500"></div>
+  </div>
+  
+</section>
+<!-- Promo Modal -->
+<div id="promoModal" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
+    <!-- Close button -->
+    <button id="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-pink-500 text-2xl">&times;</button>
+    
+    <!-- Modal Content -->
+    <img id="modalImage" src="" alt="Promo Image" 
+         class="max-h-[80vh] max-w-[90vw] object-contain rounded-lg mb-4 mx-auto">
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="py-12 bg-pink-600 text-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg mb-4">ADDRESS</p>
+          <a href="https://maps.app.goo.gl/N968aVoHU6pFa8zx7" class="hover:underline">
+            Blk 8 Lot 4 Double L San Isidro, Rodriguez, Rizal, Philippines
+          </a>
+        </div>
+        
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg mb-4">CONTACTS</p>
+          <p>0977 115 6720</p>
+        </div>
+        
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg mb-4">SOCIAL</p>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=100095654345000" class="text-white text-2xl hover:text-pink-200 transition">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <p class="text-white">| Czaeyra's Cafe and Resto</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-pink-500 mt-8 pt-8 text-center">
+        <p>© 2025 Czaeyra's Cafe and Resto. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="promo.js"></script>
+</body>
+</html>
