@@ -12,7 +12,37 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-  
+// Back to top button
+    const backToTopBtn = document.getElementById("backToTop");
+    
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.classList.remove("opacity-0", "invisible");
+        backToTopBtn.classList.add("opacity-100", "visible");
+      } else {
+        backToTopBtn.classList.remove("opacity-100", "visible");
+        backToTopBtn.classList.add("opacity-0", "invisible");
+      }
+    };
+    
+    backToTopBtn.addEventListener("click", function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Optional: Hide mobile menu when a link is clicked
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
 var swiper = new Swiper(".myPromoSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
