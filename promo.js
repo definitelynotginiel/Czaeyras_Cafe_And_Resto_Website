@@ -92,14 +92,16 @@ var swiper = new Swiper(".myPromoSwiper", {
     img.addEventListener("click", () => {
       modal.classList.remove("hidden"); // show modal
       modalImage.src = img.src;
-      modalTitle.textContent = img.getAttribute("data-title");
-      modalDesc.textContent = img.getAttribute("data-desc");
+      // Disable body scroll
+      document.body.classList.add("overflow-hidden");
     });
   });
 
   // Close modal
   closeModal.addEventListener("click", () => {
     modal.classList.add("hidden");
+    // Enable body scroll again
+    document.body.classList.remove("overflow-hidden");
   });
 
   // Close modal when clicking outside
@@ -107,4 +109,14 @@ var swiper = new Swiper(".myPromoSwiper", {
     if (e.target === modal) {
       modal.classList.add("hidden");
     }
+    // Enable body scroll again
+    document.body.classList.remove("overflow-hidden");
   });
+  // Close modal on ESC key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    document.body.classList.remove("overflow-hidden");
+  }
+});

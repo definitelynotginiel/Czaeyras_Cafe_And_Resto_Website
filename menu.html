@@ -58,7 +58,7 @@
       </section>
     <!-- Categories -->
 <!-- Category Section -->
-<section class="max-w-6xl mx-auto px-4 pb-4 pt-10 sm:pt-14 md:pt-12">
+<section class="max-w-6xl mx-auto  px-4 pb-4 pt-10 sm:pt-14 md:pt-12">
   <!-- Desktop / Tablet Categories -->
   <div id="desktopCategories" class="hidden sm:flex flex-wrap justify-center gap-4 rounded-lg p-3 text-pink-600">
   <button class="category-btn category-desktop" data-category="snacks">Snacks</button>
@@ -88,7 +88,7 @@
 <!-- Fullscreen Overlay -->
 <div id="categoryOverlay" class="fixed inset-0 bg-pink-400 bg-opacity-90 hidden md:hidden z-50 flex flex-col justify-center items-center">
   <!-- Close button -->
-  <button id="closeCategories" class="absolute top-3 right-3 text-white text-3xl">&times;</button>
+  <button id="closeCategories" class="absolute top-3 right-3 text-white text-4xl">&times;</button>
   
   <!-- Category Buttons --> 
   <div class="flex flex-wrap justify-center gap-4 max-w-4xl px-6 text-center">
@@ -108,9 +108,6 @@
     <button class="category-btn category-mobile" data-category="nutella-biscoff-milktea">Nutella / Biscoff Milktea</button>
   </div>
 </div>
-
-
-
 </section>
   
 <!-- Menu Section -->
@@ -123,8 +120,9 @@
   <!-- Snacks -->
 <div id="snacks" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/Fries_100g.jpg" alt="Fries 100g" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/Fries_250g.jpg" alt="Fries 250g" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/Fries_100g.jpg" alt="Fries 100g" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer">
+    <img src="images/Fries_250g.jpg" alt="Fries 250g" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
 
   <ul class="space-y-3 sm:px-20">
@@ -155,8 +153,10 @@
   <!-- Value Meals -->
 <div id="value-meal" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/HungarianRiceBowl.jpg" alt="Hungarian Rice Bowl" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/TapaRiceBowl.jpg" alt="Tapa Rice Bowl" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/HungarianRiceBowl.jpg" alt="Hungarian Rice Bowl" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/TapaRiceBowl.jpg" alt="Tapa Rice Bowl" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -185,8 +185,10 @@
 <!-- Burgers and Sandwiches -->
 <div id="burger-sandwich" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/Aloha.jpg" alt="Aloha Burger" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/CheeseBurger_Fries.jpg" alt="Cheese Burger & Fries" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/Aloha.jpg" alt="Aloha Burger" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/CheeseBurger_Fries.jpg" alt="Cheese Burger & Fries" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -230,8 +232,10 @@
 <!-- Mix and Match Meals -->
 <div id="mix-match" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/TapaChickenPastil&Egg.png" alt="Tapa Chicken Pastil & Egg" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/HungarianTapaEgg&Rice.jpg" alt="Hungarian Tapa Egg & Rice" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/TapaChickenPastil&Egg.png" alt="Tapa Chicken Pastil & Egg" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/HungarianTapaEgg&Rice.jpg" alt="Hungarian Tapa Egg & Rice" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -267,8 +271,10 @@
 <!-- Chicken Wings -->
 <div id="chicken-wings" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/ChickenWings_Rice.jpg" alt="Chicken Wings with Rice" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/ChickenWings_Fries.jpg" alt="Chicken Wings with Fries" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/ChickenWings_Rice.jpg" alt="Chicken Wings with Rice" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/ChickenWings_Fries.jpg" alt="Chicken Wings with Fries" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -300,8 +306,10 @@
 <!-- Pasta -->
 <div id="pasta" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/Czaeyras-Spaghetti.jpg" alt="Czaeyra's Spaghetti" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/carbonara.png" alt="Czaeyra's Carbonara" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/Czaeyras-Spaghetti.jpg" alt="Czaeyra's Spaghetti" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/carbonara.png" alt="Czaeyra's Carbonara" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -318,8 +326,10 @@
 <!-- Ramen Series -->
 <div id="ramen-series" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/spicy_tonkatsu_ramen.jpeg" alt="Spicy Tonkatsu Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/creamy_tonkatsu_ramen.jpeg" alt="Creamy Tonkatsu Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/spicy_tonkatsu_ramen.jpeg" alt="Spicy Tonkatsu Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/creamy_tonkatsu_ramen.jpeg" alt="Creamy Tonkatsu Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -352,8 +362,10 @@
 <!-- Buldak Ramen Series -->
 <div id="buldak-ramen-series" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/buldak ramen.avif" alt="Buldak Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/spicy buldak ramen.avif" alt="Spicy Buldak Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/buldak ramen.avif" alt="Buldak Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/spicy buldak ramen.avif" alt="Spicy Buldak Ramen" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
   <ul class="space-y-3 sm:px-20">
     <li class="menu-list shadow-sm">
@@ -391,8 +403,10 @@
   <!-- Coffee -->
 <div id="coffee" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/iced coffee.png" alt="Iced Coffee" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/spanish latte.png" alt="Spanish Latte" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/iced coffee.png" alt="Iced Coffee" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/spanish latte.png" alt="Spanish Latte" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
 
   <ul class="space-y-3 sm:px-20 hidden sm:block">
@@ -471,8 +485,10 @@
 <!-- Milktea -->
 <div id="milktea" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/OkinawaMilktea.jpg" alt="Okinawa Milktea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/DarkChocoMilktea.jpg" alt="Dark Chocolate Milktea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/OkinawaMilktea.jpg" alt="Okinawa Milktea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/DarkChocoMilktea.jpg" alt="Dark Chocolate Milktea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
 
   <ul class="space-y-3 sm:px-20 hidden sm:block">
@@ -622,8 +638,10 @@
   <!-- Fruit Tea / Soda --> 
 <div id="fruit-tea" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/GreenAppleTea.png" alt="Green Apple Tea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/BlueberryTea.png" alt="Blueberry Tea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/GreenAppleTea.png" alt="Green Apple Tea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/BlueberryTea.png" alt="Blueberry Tea" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
 
   <ul class="space-y-3 sm:px-20 hidden sm:block">
@@ -703,8 +721,10 @@
   <!-- Frappé -->
 <div id="frappe" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/MochaFrappe.jpg" alt="Mocha Frappé" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/DarkChocoFrappe.jpg" alt="Dark Chocolate Frappé" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/MochaFrappe.jpg" alt="Mocha Frappé" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/DarkChocoFrappe.jpg" alt="Dark Chocolate Frappé" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
 
   <ul class="space-y-3 sm:px-20">
@@ -743,8 +763,10 @@
 <!-- Nutella and Biscoff Milktea -->
 <div id="nutella-biscoff-milktea" class="menu-category hidden">
   <div class="flex flex-col md:flex-row gap-4 mb-6">
-    <img src="images/DarkChocoNutella.jpg" alt="Dark Chocolate Nutella" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg">
-    <img src="images/ChocolateNutella.jpg" alt="Chocolate Nutella" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg hidden md:block">
+    <img src="images/DarkChocoNutella.jpg" alt="Dark Chocolate Nutella" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+">
+    <img src="images/ChocolateNutella.jpg" alt="Chocolate Nutella" class="w-full md:w-1/2 h-60 object-cover rounded-xl shadow-lg cursor-pointer
+ hidden md:block">
   </div>
 
   <ul class="space-y-3 sm:px-20">
@@ -781,6 +803,11 @@
 </div>
 </div>
 </section>
+<!-- Image Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex hidden items-center justify-center z-50">
+  <button id="closeModal" class="absolute top-3 right-3 text-white text-6xl">&times;</button>
+  <img id="modalImage" src="" alt="Preview" class="max-w-[90%] max-h-[80%] rounded-lg shadow-lg">
+</div>
 
 
     <!-- Footer -->

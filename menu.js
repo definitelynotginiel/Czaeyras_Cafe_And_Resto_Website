@@ -24,11 +24,15 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
   // Open overlay
   openBtn.addEventListener("click", () => {
     overlay.classList.remove("hidden");
+    // Disable body scroll
+    document.body.classList.add("overflow-hidden");
   });
 
   // Close overlay with X button
   closeBtn.addEventListener("click", () => {
     overlay.classList.add("hidden");
+    // Enable body scroll again
+    document.body.classList.remove("overflow-hidden");
   });
 
   // Close overlay when clicking a category
@@ -36,6 +40,8 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
     btn.addEventListener("click", () => {
       overlay.classList.add("hidden");
       showCategory(btn.dataset.category); // <-- reuse your existing function
+      // Enable body scroll again
+      document.body.classList.remove("overflow-hidden");
     });
   });
 
@@ -129,3 +135,48 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
     mobileMenuIcon.classList.add("fa-bars");
   });
 });
+// Image Modal (Reusable for all categories)
+const images = document.querySelectorAll(".menu-category img"); // select ALL menu images
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
+
+// Open modal on image click
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex"); 
+    modalImg.src = img.src; 
+    modalImg.alt = img.alt;
+    
+  // Disable body scroll
+    document.body.classList.add("overflow-hidden");
+  });
+});
+
+// Close modal on X button
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+  // Enable body scroll again
+  document.body.classList.remove("overflow-hidden");
+});
+
+// Close modal on background click
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+  // Enable body scroll again
+  document.body.classList.remove("overflow-hidden");
+});
+// Close modal on ESC key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+    document.body.classList.remove("overflow-hidden");
+  }
+});
+
