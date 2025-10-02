@@ -103,15 +103,29 @@ const desktopButtons = document.querySelectorAll("#desktopCategories .category-b
   });
 
   // Mobile menu toggle
-      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-      const mobileMenu = document.getElementById('mobileMenu');
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuIcon = mobileMenuBtn.querySelector("i");
 
-      // Optional: Hide mobile menu when a link is clicked
-      document.querySelectorAll('#mobileMenu a').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-        });
-      });
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      
+      // Toggle icon between bars and times
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenuIcon.classList.remove("fa-times");
+        mobileMenuIcon.classList.add("fa-bars");
+      } else {
+        mobileMenuIcon.classList.remove("fa-bars");
+        mobileMenuIcon.classList.add("fa-times");
+      }
+    });
+
+
+    // Optional: Hide mobile menu when a link is clicked
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    mobileMenuIcon.classList.remove("fa-times");
+    mobileMenuIcon.classList.add("fa-bars");
+  });
+});
